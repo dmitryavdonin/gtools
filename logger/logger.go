@@ -5,7 +5,6 @@ import (
 	"os"
 	"strings"
 
-	formatters "github.com/fabienm/go-logrus-formatters"
 	"github.com/dmitryavdonin/gtools/context"
 
 	"github.com/sirupsen/logrus"
@@ -52,7 +51,6 @@ func New(level, serviceName string) (*Logger, error) {
 	logger := logrus.New()
 
 	logger.Level = l
-	logger.Formatter = formatters.NewGelf(serviceName)
 	logger.Out = os.Stdout
 
 	return &Logger{
