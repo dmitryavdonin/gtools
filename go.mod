@@ -9,7 +9,6 @@ require (
 	github.com/disintegration/imaging v1.6.2
 	github.com/docker/docker v23.0.5+incompatible
 	github.com/docker/go-connections v0.4.0
-	github.com/fabienm/go-logrus-formatters v1.0.0
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/google/uuid v1.3.0
 	github.com/jackc/pgx/v5 v5.3.1
@@ -42,7 +41,7 @@ require (
 	github.com/pierrec/lz4/v4 v4.1.15 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
-	go.uber.org/atomic v1.10.0 // indirect
+	go.uber.org/atomic v1.7.0 // indirect
 	golang.org/x/crypto v0.6.0 // indirect
 	golang.org/x/image v0.0.0-20210216034530-4410531fe030 // indirect
 	golang.org/x/net v0.8.0 // indirect
