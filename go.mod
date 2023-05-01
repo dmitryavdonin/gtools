@@ -17,11 +17,11 @@ require (
 	github.com/segmentio/kafka-go v0.4.39
 	github.com/sirupsen/logrus v1.9.0
 	github.com/uber/jaeger-client-go v2.30.0+incompatible
-	gitlab.com/kanya384/gotools v0.0.10
 	google.golang.org/grpc v1.54.0
 )
 
 require (
+	github.com/HdrHistogram/hdrhistogram-go v1.1.2 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/docker/distribution v2.8.1+incompatible // indirect
 	github.com/docker/go-units v0.4.0 // indirect

@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	formatters "github.com/fabienm/go-logrus-formatters"
-	"gitlab.com/kanya384/gotools/context"
+	"github.com/dmitryavdonin/gtools/context"
 
 	"github.com/sirupsen/logrus"
 )
