@@ -8,6 +8,7 @@ import (
 	"github.com/dmitryavdonin/gtools/context"
 
 	"github.com/sirupsen/logrus"
+	"github.com/t-tomalak/logrus-easy-formatter"
 )
 
 // Interface -.
@@ -48,10 +49,13 @@ func New(level, serviceName string) (*Logger, error) {
 		l = logrus.InfoLevel
 	}
 
-	logger := logrus.New()
-
-	logger.Level = l
-	logger.Out = os.Stdout
+	logger := &logrus.Logger{
+		Out:   os.Stderr,
+		Level: l,
+		Formatter: &easy.Formatter{
+			LogFormat: "[%lvl%]: %time% - %msg% {%customField%}",
+		},
+	}
 
 	return &Logger{
 		Logger: logger,
