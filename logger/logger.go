@@ -53,7 +53,8 @@ func New(level, serviceName string) (*Logger, error) {
 		Out:   os.Stderr,
 		Level: l,
 		Formatter: &easy.Formatter{
-			LogFormat: "[%lvl%]: %time% - %msg% {%customField%}",
+			TimestampFormat: "2006-01-02 15:04:05",
+			LogFormat:       "[%lvl%]: %time% - %msg%",
 		},
 	}
 
